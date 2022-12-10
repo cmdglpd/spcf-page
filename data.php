@@ -211,6 +211,7 @@ $footer2 = [
 $contacts = [
     [
         "name" => "Prince Charles Clemente",
+        "role" => "Designer",
         "pfp_source" => "assets/charles.jpg",
         "links" => [
             [
@@ -229,6 +230,7 @@ $contacts = [
     ],
     [
         "name" => "Cathlyn Mae Lapid",
+        "role" => "Frontend Developer",
         "pfp_source" => "assets/cathlyn.jpg",
         "links" => [
             [

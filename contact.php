@@ -9,7 +9,6 @@
     <link rel="icon" href="assets/spcf-logo-solo.png" type="image/x-icon">
     <link rel="stylesheet" href="style/bootstrap.min.css" />
     <link rel="stylesheet" href="style/style.css" />
-    <script src="js/navbar.js"></script>
 </head>
 
 <style>
@@ -20,7 +19,7 @@
         margin: auto;
         height: 100vh;
         width: 100%;
-        background-image: url("assets/backgrounds/hero_section_bg.png");
+        background-image: url("assets/backgrounds/departments_bg.jpg");
         background-color: #4a4e64;
         background-repeat: no-repeat;
         background-size: cover;
@@ -51,7 +50,7 @@
     img {
         height: 250px;
         width: 250px;
-        margin-bottom: 1rem;
+        margin: 0.5rem 0;
     }
 
     a {
@@ -68,8 +67,21 @@
     }
 
     .contact-links img {
-        height: 2rem;
-        width: 2rem;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.65rem;
+    }
+
+    h5 {
+        margin-top: 0.55rem;
+        font-size: 1.40rem;
+    }
+
+    h6 {
+        font-style: italic;
     }
 </style>
 
@@ -78,11 +90,12 @@
     <?php include 'data.php'; ?>
     <div class="contact">
         <div class="row">
-            <h3>Developers</h3>
+            <h4>Want us to create your website? <br> Contact the members of our team below! </h4>
             <?php foreach ($contacts as $contact) : ?>
                 <div class="col">
                     <img src=<?php echo $contact["pfp_source"] ?> alt="">
                     <h5><?php echo $contact["name"] ?></h5>
+                    <h6><?php echo $contact["role"] ?></h6>
                     <div class="contact-links">
                         <?php foreach ($contact["links"] as $contactLink) : ?>
                             <a href=<?php echo $contactLink["url"] ?> target="_blank"><img src=<?php echo $contactLink["img_source"] ?> alt=""></a>
