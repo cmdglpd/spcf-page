@@ -19,7 +19,7 @@
         margin: auto;
         height: 100vh;
         width: 100%;
-        background-image: url("assets/backgrounds/departments_bg.jpg");
+        background-image: url("assets/backgrounds/hero_section_bg.png");
         background-color: #4a4e64;
         background-repeat: no-repeat;
         background-size: cover;
